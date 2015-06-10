@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Christopher Gervais (ergonlogic)
+  description: Installs and configures Shinken and Graphite
+  company: GetValkyrie 
+  license: GPLv3
+  min_ansible_version: 1.8
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - cloud:ec2
+  - monitoring
+dependencies:
+  - role: valhalla.common
+  - role: valhalla.web
+  - role: getvalkyrie.graphite
+  - role: getvalkyrie.shinken
+    shinken_graphite: true
+
