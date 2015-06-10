@@ -7,7 +7,7 @@ ansible-galaxy install --ignore-errors http://github.com/getvalkyrie/valhalla.we
 ansible-galaxy install --ignore-errors http://github.com/getvalkyrie/ansible-role-graphite,,getvalkyrie.graphite
 ansible-galaxy install --ignore-errors http://github.com/getvalkyrie/ansible-role-shinken,,getvalkyrie.shinken
 
-target=/etc/ansible/roles/valhalla.web
+target=/etc/ansible/roles/valhalla.monitoring
 if [ ! -e $target ]; then
   mkdir -p /etc/ansible/roles/
   ln -s /vagrant/ $target
